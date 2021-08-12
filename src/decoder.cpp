@@ -35,7 +35,7 @@ string decode(string imagePath)
   ImageScanner scanner;
 
   // Configure scanner
-  scanner.set_config(ZBAR_QRCODE, ZBAR_CFG_ENABLE, 1);
+  scanner.set_config(ZBAR_QRCODE, cv::COLOR_BGR2GRAY, 1);
 
   // Convert image to grayscale
   Mat imGray;
