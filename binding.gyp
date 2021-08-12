@@ -10,7 +10,7 @@
       ],
       "libraries":    ["-lzbar", "-lopencv_core", "-lopencv_imgcodecs", "-lopencv_highgui", "-lopencv_imgproc"],
       "include_dirs": [
-        "<!@(node -p \"require('node-addon-api').include\")"
+        "<!@(node -p \"require('node-addon-api').include\")", "/usr/include/opencv4"
       ],
       'defines': [ 'NAPI_DISABLE_CPP_EXCEPTIONS' ],
     }
